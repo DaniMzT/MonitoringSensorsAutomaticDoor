@@ -1,0 +1,349 @@
+body{ /*applied to the body of all the php files under style.css*/
+    background-image: url("/IoT/images/wooden_door.jpg");
+    height: 100vh;/*vh=relative to 1%height viewport*/
+    /*background-position: center center;*/
+    background-size: cover;
+}
+.header_container{ /*the whole container of the header */
+    height: 10vh;
+    background-color: blue;
+    display:flex; /* apply flexbox*/
+    justify-content: space-evenly; /*space between h1-nav is the same,same as the space between outer items and edges*/
+    color:white;
+    align-items: center; /*center elements vertically. by default, flexbox displays items horizontally*/
+}
+
+
+/* unvisited link */
+.header_container h1 a:link {
+    text-decoration:none;
+}
+
+/* visited link */
+.header_container h1 a:visited {
+    text-decoration:none;
+}
+
+/* mouse over link */
+.header_container h1 a:hover {
+    text-decoration:none;
+}
+
+/* selected link */
+.header_container h1 a:active {
+    text-decoration:none;
+}
+
+.header_container h1{ /*h1 of the header*/
+    margin-left: 1vw; /*vw=relative to 1%width viewport */
+    color: yellow;
+    font-size: 5vh;/*vh=relative to 1%height viewport*/
+}
+.header_nav{ /*navigation of the header*/
+    padding: 0;
+}
+
+.header_nav li{ /*items within the list of navigation */
+    display: inline; /*items in one line*/
+    margin:5vw;
+}
+
+.header_nav a{ /*links within the navigation of the header: Alarms.php, Data Register.php*/
+    color: white;
+    text-decoration: none; /*delete the line of the link*/
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.status{
+    display:flex; /* creates flex container*/
+    /*justify-content:center;*/ /*center horizontally */
+    justify-content: space-around;
+    align-items: center; /*center vertically */
+}
+
+.statusContent {
+    display:flex;
+    justify-content: center;
+    align-items: center; /*center vertically */
+}
+.LEDgreen{
+    /*margin: 2vw auto;*/
+    width: 2.5vw;
+    height: 5vh;
+    background-color: #690;
+    /*border-radius:50%;*/
+    
+}
+.LEDred{
+    /*margin: 2vw auto;*/
+    width: 2.5vw;
+    height: 5vh;
+    background-color: red;
+    /*border-radius:50%;*/
+}
+.LEDorange{
+    /*margin: 2vw auto;*/
+    width: 2.5vw;
+    height: 5vh;
+    background-color: orange;
+    /*border-radius:50%;*/
+}
+.alarm_description{
+    color: red;
+    font-weight: bold;
+    font-size: 5vh;
+}
+.running_description{
+    color: rgb(6, 99, 14);
+    font-weight: bold;
+    font-size: 5vh;
+    /*vertical-align: middle;*/
+}
+.stop_description{
+    color: rgb(233, 163, 14);
+    font-weight: bold;
+    font-size: 5vh;
+    /*vertical-align: middle;*/
+}
+
+.title_display {
+    color: yellow;
+}
+.title_status {
+    color:yellow;
+}
+.title_select{
+    color:yellow;
+}
+
+.display{
+    display: flex; /*creates a flex container*/
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sensors{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    /*grid-template-rows: auto auto auto;*/
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vh;
+}
+
+.sensor-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.unsubscribe_question{
+    color:rgb(192, 28, 28);
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.alarm_question{
+    color:yellow;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.box_alarms_form{
+    display:flex; /* apply flexbox*/
+    justify-content: center;
+    align-items: center; /*center elements vertically*/
+    flex-direction: column; /*change direction of the flexbox*/
+}
+
+label{
+    display:block; /*For the labels of the form appearing in single lines */
+}
+
+.limits_header{
+    color:rgb(11, 99, 48);
+    font-size: 7vh;
+    font-weight: bold;
+}
+
+.box_limits_form{
+    display:flex; /* apply flexbox*/
+    justify-content: center;
+    align-items: center; /*center elements vertically*/
+    flex-direction: column; /*change direction of the flexbox*/
+}
+
+.register_limits_form{
+    display:flex; /* apply flexbox*/
+    justify-content: center;
+    align-items: center; /*center elements vertically*/
+    flex-direction: column; /*change direction of the flexbox*/
+}
+.register_header{
+    color:rgb(11, 99, 48);
+    font-size: 5vh;
+    font-weight: bold;
+}
+.register_text{
+    color: orange;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.alert-success{
+    z-index: 1;
+    background: #D4EDDA;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD66E;
+    border-radius: 4px;
+}
+  
+.alert-error{
+    z-index: 1;
+    background: #FFF3CD;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #FFA502;
+    border-radius: 4px;
+}
+
+.gridactivations{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vh;
+    
+}
+
+.containerActivations{
+    display:flex;
+    justify-content:center; /*center horizontally */
+    align-items: center; /*center vertically */
+}
+
+/* Media queries to adapt to smartphones */
+/* in landscape orientation, Chrome adapts it quite well. no prob */
+/* Check differences with the original declarations */
+
+@media (max-width: 479px) and (orientation: portrait) {
+    
+    /*replace the background as now better to use a portrait picture */
+    body{ /*applied to the body of all the php files under style.css*/
+        background-image: url("/IoT/images/wooden_door-vertical.JPG"); /*portrait picture, different than landscape picture */
+        height: 100vh;/*vh=relative to 1%height viewport*/
+        min-height : 100% ;/*without this, background image was not working in Chrome */
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    /*changing the header:*/
+    .header_container{ /*the whole container of the header */
+        height: 20vh;
+        background-color: blue;
+        display:flex; /* apply flexbox*/
+        justify-content: space-evenly; /*space between h1-nav is the same,same as the space between outer items and edges*/
+        color:white;
+        align-items: center; /*center elements vertically. by default, flexbox displays items horizontally*/
+    }
+
+    .header_container h1{ /*h1 of the header*/
+        /*margin-left: 1vw; /*vw=relative to 1%width viewport */
+        color: yellow;
+        font-size: 5vh;/*vh=relative to 1%height viewport. */
+    }
+    .header_nav{ /*navigation of the header*/
+        padding: 0;
+        display: flex;
+        flex-direction: column; /*Navigation items in a column*/
+        justify-content: center;
+    }
+    .header_nav li{ /*items within the list of navigation */
+        margin:0vw; /*just created because otherwise the inline from original would keep actuating */
+    }
+    .header_nav a{ /*links within the navigation of the header: Alarms.php, Data Register.php*/
+        color: white;
+        text-decoration: none; /*delete the line of the link*/
+        font-size: 3vh;
+        font-weight: bold;
+    }
+
+    /*Reduce titles Select Date..., current status */
+    .title_display {
+        font-size: 3vh;
+    }
+    .title_status {
+        font-size: 3vh;
+    }
+    .title_select{
+        font-size: 3vh;
+    }
+
+    /*Reduce sensors size */
+    .sensors{
+        display:grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        /*grid-template-rows: auto auto auto;*/
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vh;
+    }
+    .sensor-column h3{
+        font-size: 2vh;
+    }
+    .sensor-column p{
+        font-size: 2vh;
+    }
+
+    /*Activations bigger, better in columns */
+    .gridactivations{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .containerActivations{
+        display:flex;
+        flex-direction: column;
+        justify-content:center; /*center vertically now */
+        align-items: center; /*center horizontally */
+    }
+
+    /*reducing size alarm questions, register */
+    .unsubscribe_question{
+        color:rgb(192, 28, 28);
+        font-size: 3vh;
+        font-weight: bold;
+    }
+
+    .alarm_question{
+        color:yellow;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+
+    .register_header{
+        color:yellow;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    .register_text{
+        color: orange;
+        font-weight: bold;
+        font-size: 2vh;
+    }
+
+    .limits_header{
+        color:yellow;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+
+}
