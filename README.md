@@ -11,8 +11,8 @@ The targets of the project are:
   - Perform remote activations on the bench (open/stop)
 
 A NodeMCU is the main controller, acquiring the sensors data and sending the processed data via WiFi to a database (with a PHP file as a bridge).
-There is an Arduino UNO for the acquisition of position, speed (both acquired with a home-made encoder: 2 micro photosensors,emitting to and receiving from a zebra band on the door) and limit switch activations (for door cycleS)
-The communication between NodeMCU and Arduino UNO is via SoftwareSerial --> not very reliable, it is the main issue to be fixed
+There is an Arduino UNO for the acquisition of position, speed (both acquired with a home-made encoder: 2 micro photosensors,emitting to and receiving from a zebra band on the door) and limit switch activations (for door cycles).
+The communication between NodeMCU and Arduino UNO is via SoftwareSerial --> not very reliable, it is the main issue to be fixed.
 Database and website: based on Bitnami WAMP (package for Windows, Apache, MySQL and PHP)
 
 Files in the project:
