@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name board_withoutEncoder-rescue)(type Legacy)(uri ${KIPRJMOD}/board_withoutEncoder-rescue.lib)(options "")(descr ""))
+)
